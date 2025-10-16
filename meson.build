@@ -16,7 +16,6 @@ full_name  = 'libcli'
 # General version
 libcli_version = meson.project_version()
 
-gnome=import('gnome')
 compiler = meson.get_compiler('c')
 common_cflags = compiler.get_supported_arguments([
         '-pedantic',
@@ -32,3 +31,4 @@ common_cflags = compiler.get_supported_arguments([
 
 rootInclude = include_directories('.')
 subdir('src')
+subdir('tests')
